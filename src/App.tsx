@@ -80,7 +80,41 @@ export default function App() {
 
 
   return (
+
     <div style={{ backgroundColor: '#fcfbf7', minHeight: '100vh', padding: '20px', fontFamily: '"Times New Roman", Times, serif', color: '#111' }}>
+      {/* KLISTRA IN DETTA PRECIS I BÖRJAN AV RETURN-SATSEN */}
+      <style>{`
+  .newspaper-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+  }
+  .editor-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  /* Om skärmen är en mobil (max 768px bred) */
+  @media (max-width: 768px) {
+    .newspaper-grid {
+      grid-template-columns: 1fr !important; /* Blir 1 kolumn istället för 2 */
+      gap: 20px !important;
+    }
+    .editor-grid {
+      grid-template-columns: 1fr !important; /* Redigeringsverktyget blir 1 kolumn */
+    }
+    .editor-span-2 {
+      grid-column: span 1 !important;
+    }
+    .newspaper-header h1 {
+      font-size: 32px !important; /* Tidningsnamnet krymper på mobilen */
+    }
+    .main-headline {
+      font-size: 32px !important; /* Rubriken krymper på mobilen */
+    }
+  }
+`}</style>
 
       {/* TIDNINGSSIDA */}
       <div style={{ maxWidth: '800px', margin: '0 auto', backgroundColor: '#fff', padding: '20px', boxShadow: '0 0 10px rgba(0,0,0,0.05)' }}>
@@ -162,7 +196,7 @@ export default function App() {
                 </div>
               </div>
             </div>
-            
+
 
           </div>
 
