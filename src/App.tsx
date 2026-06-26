@@ -114,13 +114,18 @@ export default function App() {
       font-size: 32px !important; /* Rubriken krymper på mobilen */
     }
   }
+    body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
 `}</style>
 
       {/* TIDNINGSSIDA */}
-      <div style={{ maxWidth: '800px', margin: '0 auto', backgroundColor: '#fff', padding: '20px', boxShadow: '0 0 10px rgba(0,0,0,0.05)' }}>
+<div style={{ maxWidth: '900px', margin: '0 auto', backgroundColor: '#fff', padding: '0px', boxShadow: '0 0 10px rgba(0,0,0,0.05)', width: '100%', boxSizing: 'border-box' }}>
+
 
         {/* Tidningshuvud */}
-        <div style={{ borderBottom: '4px solid #000', paddingBottom: '5px', marginBottom: '15px' }}>
+        <div style={{ borderBottom: '4px solid #000', paddingBottom: '5px', marginBottom: '15px', marginTop: '0px' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', width: '100%' }}>
             <h1 style={{ fontFamily: 'Georgia, serif', fontSize: '42px', fontWeight: '900', letterSpacing: '1px', margin: 0, flexGrow: 1 }}>
               {content.newspaperName}
