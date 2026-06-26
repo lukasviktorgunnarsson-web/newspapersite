@@ -81,7 +81,7 @@ export default function App() {
 
   return (
 
-    <div style={{ backgroundColor: '#fcfbf7', minHeight: '100vh', padding: '20px', fontFamily: '"Times New Roman", Times, serif', color: '#111' }}>
+    <div style={{ backgroundColor: '#fcfbf7', minHeight: '100vh', padding: '0px', fontFamily: '"Times New Roman", Times, serif', color: '#111' }}>
       {/* KLISTRA IN DETTA PRECIS I BÖRJAN AV RETURN-SATSEN */}
       <style>{`
   .newspaper-grid {
